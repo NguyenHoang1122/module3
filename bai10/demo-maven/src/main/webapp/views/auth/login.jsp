@@ -6,19 +6,30 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib uri="jakarta.tags.core" prefix="c" %>
+
+<%
+    int a = 10;
+
+    String pageTitle = " Login form";
+    String error = request.getParameter("error");
+    String mesError = error != null ? " Tai khoan hoac mat khau sai" : "" ;
+%>
 <html>
 <head>
-    <title>Title</title>
+    <title>Login</title>
 </head>
 <body>
-<h2><c:out value= "Welcome to home page"/></h2>
-<table>
-    <tr>
-        <td>STT</td>
-        <td>Ten</td>
-        <td>Email</td>
+<form method="post" action="/auth/login">
+    <h1><%= pageTitle%></h1>
+    <%= mesError %>
+    <label>Username:
+        <input type="text" name="username" placeholder="Nhập username" />
+    </label><br>
+    <label>Password:
+        <input type="password" name="password" placeholder="Nhập password" />
+    </label><br>
+    <input type="submit" value="Login" />
+</form>
 
-</table>
 </body>
 </html>

@@ -1,0 +1,16 @@
+.line-with-text {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.line-with-text hr {
+    flex: 1;
+    border: none;
+    border-top: 1px solid #000;
+}
+
+.line-with-text span {
+    padding: 0 10px;
+}

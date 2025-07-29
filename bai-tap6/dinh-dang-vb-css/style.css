@@ -1,0 +1,30 @@
+.blue{
+    color: #0a0a87;
+}
+#xanh-nhat{
+    color: #0000FF;
+}
+.thut-dau-dong{
+    text-indent: 15px;
+    text-align: justify;
+}
+div{
+    width: 600px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+.thu-nho{
+    font-size: 9px;
+    vertical-align: top;
+    text-align: left;
+}
+h1{
+    margin: 0;
+}
+hr{
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+#can-le{
+    margin-top: 0px;
+}

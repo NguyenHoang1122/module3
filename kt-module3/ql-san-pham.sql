@@ -1,0 +1,16 @@
+CREATE DATABASE quan_ly_san_pham;
+USE quan_ly_san_pham;
+
+CREATE TABLE Product(
+id INT AUTO_INCREMENT PRIMARY KEY,
+`name` VARCHAR(255) NOT NULL,
+price DECIMAL(13,2) NOT NULL,
+quantity INT NOT NULL,
+color VARCHAR(255),
+c_id INT,
+FOREIGN KEY (c_id) REFERENCES Category(id)
+);
+CREATE TABLE Category(
+id INT AUTO_INCREMENT PRIMARY KEY,
+`name` VARCHAR(255) NOT NULL
+);
